@@ -4,7 +4,7 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 
 function App() {
-  const [limit, setLimit] = useState(15);
+  const [limit, setLimit] = useState(20);
   const [handleGenerate, setHandleGenerate] = useState(1);
   const [degree, setDegree] = useState(0);
   const handleLimit = (val) => {
@@ -24,7 +24,7 @@ function App() {
         handleGenerateButton={handleGenerateButton}
         handledegree={handledegree}
       />
-      <div className="w-screen mt-[135px] md:mt-[50px] bg-linear-to-r from-gray-100 to-blue-100 pt-3">
+      <div className="w-screen mt-[135px] md:mt-[50px] bg-linear-to-r from-gray-100 to-blue-100">
         <Home
           limit={limit}
           handleGenerateButton={handleGenerate}

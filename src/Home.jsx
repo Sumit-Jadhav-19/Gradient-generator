@@ -11,6 +11,7 @@ export default function Home({ limit, handleGenerateButton, degree }) {
 
   const generateColor = () => {
     const newColors = [];
+    limit === 0 ? 20 : limit;
     for (let i = 0; i < limit; i++) {
       const objColors = {
         deg: degree === 0 ? Math.floor(Math.random() * 360) + 1 : degree,
@@ -38,14 +39,14 @@ export default function Home({ limit, handleGenerateButton, degree }) {
   };
   return (
     <div>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 p-2">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 px-2 h-[93vh] overflow-y-auto py-3">
         {color.map((col, index) => (
           <div
             key={index}
             className="p-2 shadow-md rounded-md border-1 border-gray-200 bg-white hover:shadow-2xl hover:scale-105 transition-scale duration-200"
           >
             <div
-              className="w-full h-[100px] rounded-sm relative group z-1 "
+              className="w-full h-[150px] rounded-sm relative group z-1 "
               style={{
                 background: `linear-gradient(${col.deg}deg, #${col.color1}, #${col.color2})`,
               }}
@@ -58,7 +59,7 @@ export default function Home({ limit, handleGenerateButton, degree }) {
                 Copy
               </button>
             </div>
-            <div className="text-center text-[0.8em] mt-2">
+            <div className="text-center text-[1em] mt-2">
               <p>
                 background: linear-gradient({col.deg}deg, #{col.color1}, #
                 {col.color2})

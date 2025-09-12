@@ -46,14 +46,14 @@ export default function Home({ limit, handleGenerateButton, degree }) {
             className="p-2 shadow-md rounded-md border-1 border-gray-200 bg-white hover:shadow-2xl hover:scale-105 transition-scale duration-200"
           >
             <div
-              className="w-full h-[150px] rounded-sm relative group z-1 "
+              className="w-full h-[150px] rounded-sm relative group z-1"
               style={{
                 background: `linear-gradient(${col.deg}deg, #${col.color1}, #${col.color2})`,
               }}
             >
               <button
                 type="button"
-                className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-black px-2 py-1 text-xs rounded shadow-md cursor-pointer"
+                className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-black px-2 py-1 text-xs rounded shadow-md cursor-pointer "
                 onClick={() => handleCopy(col)}
               >
                 Copy

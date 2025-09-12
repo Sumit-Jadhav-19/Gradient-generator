@@ -20,7 +20,7 @@ You can view the live version of the app here:\
 
 - **Tailwind CSS**: For styling and creating a responsive layout.
 
-##🏗️ Installation
+## 🏗️ Installation
 To run the project locally, follow the instructions below:
 ### Prerequisites
 Make sure you have Node.js and npm installed on your system.

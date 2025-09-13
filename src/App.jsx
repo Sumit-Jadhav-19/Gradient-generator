@@ -24,7 +24,7 @@ function App() {
         handleGenerateButton={handleGenerateButton}
         handledegree={handledegree}
       />
-      <div className="w-screen mt-[135px] md:mt-[50px] bg-linear-to-r from-gray-100 to-blue-100">
+      <div className="w-screen mt-[58px] md:mt-[54px] bg-linear-to-r from-gray-100 to-blue-100">
         <Home
           limit={limit}
           handleGenerateButton={handleGenerate}
